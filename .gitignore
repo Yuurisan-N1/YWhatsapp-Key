@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local SDK path
+local.properties
+
+# Signing material
+app/keystore/
+*.jks
+*.keystore
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Output
+*.apk
+*.aab
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
