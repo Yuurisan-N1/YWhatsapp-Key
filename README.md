@@ -2,7 +2,7 @@
 
 <img width="100%" alt="header" src="https://capsule-render.vercel.app/api?type=waving&height=210&text=YWhatsapp%20Key&fontAlign=50&fontAlignY=36&fontSize=56&desc=Android%20Key%20Scanner%20%7C%20Accessibility%20%7C%20Vision%20%7C%20Floating%20Overlay&descAlign=50&descAlignY=58"/>
 
-<img alt="typing" src="https://readme-typing-svg.demolab.com?font=Inter&size=18&duration=3000&pause=650&center=true&vCenter=true&width=900&lines=Auto+Read+4-Digit+Key+%7C+Accessibility+Node+%2B+Screen+Vision;Auto+Tap+Generate+Until+Key+Matches+Target;Auto+Simpan+%7C+Tap+Save+on+Match+or+Stop+and+Show;Floating+Panel+%7C+Draggable+%7C+Collapsible+Bubble;Twin+Mode+%7C+Repeated+Keys+%7C+Multi-Target+List"/>
+<img alt="typing" src="https://readme-typing-svg.demolab.com?font=Inter&size=18&duration=3000&pause=650&center=true&vCenter=true&width=900&lines=Auto+Read+4-Digit+Key+%7C+Accessibility+Node+%2B+Screen+Vision;Auto+Tap+Generate+Until+Key+Matches+Target;Auto+Save+%7C+Tap+Save+on+Match+or+Stop+and+Show;Floating+Panel+%7C+Draggable+%7C+Collapsible+Bubble;Twin+Mode+%7C+Repeated+Keys+%7C+Multi-Target+List"/>
 
 <p>
   <img alt="kotlin" src="https://img.shields.io/badge/Kotlin-Android-7F52FF?logo=kotlin&logoColor=white"/>
@@ -137,7 +137,7 @@ All three rows show a green pill when the permission is granted. Once all three 
 2. Tap Start in YWhatsapp Key. A floating bubble and a panel appear on screen
 3. Drag the panel by its title bar to position it. Tap the arrow next to the close button to collapse it to the title bar only. The position is remembered across sessions
 4. Type one or more target keys in the target field, or leave it empty
-5. Toggle **Auto simpan** to decide what happens when the key matches:
+5. Toggle **Auto save** to decide what happens when the key matches:
    - On: the engine confirms the read and taps the save button in the target app automatically
    - Off: the engine stops generating when the key matches and leaves it on screen. The save button is pressed by hand
 6. Tap **Start** in the panel to begin the engine
@@ -158,7 +158,7 @@ If the target field is empty, the engine stops at the first key it reads with en
 
 ## Calibrating Buttons
 
-If the accessibility tree of the target app does not expose the button labels, the engine cannot locate the buttons automatically. Tap **Set titik** in the panel, then tap the generate button once in the target app. With **Auto simpan** on, also tap the save button as the second point. Both coordinates are saved and reused from that point on. This makes the engine work on apps that draw their UI on a canvas or inside a web view.
+If the accessibility tree of the target app does not expose the button labels, the engine cannot locate the buttons automatically. Tap **Set titik** in the panel, then tap the generate button once in the target app. With **Auto save** on, also tap the save button as the second point. Both coordinates are saved and reused from that point on. This makes the engine work on apps that draw their UI on a canvas or inside a web view.
 
 ---
 
@@ -198,8 +198,8 @@ The screen vision engine uses grayscale conversion, Otsu thresholding, connected
 ### Auto Generate and Match
 The engine taps the generate button in the target app repeatedly, reading the key after each tap, until a key matches the target list or the attempt limit is reached.
 
-### Auto Simpan Toggle
-With Auto simpan on, the engine taps the save button in the target app when a match is found. With it off, the engine stops on the matching key and leaves saving to the user.
+### Auto Save Toggle
+With Auto save on, the engine taps the save button in the target app when a match is found. With it off, the engine stops on the matching key and leaves saving to the user.
 
 ### Floating Overlay
 A floating bubble and a collapsible panel appear over all other apps. The panel shows the last read key, its source, attempt count, confidence, and a scrollable log. It can be collapsed to the title bar only to save screen space. Position is saved and restored across sessions.
