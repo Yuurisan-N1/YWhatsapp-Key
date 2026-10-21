@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YWhatsapp Key</string>
+
+    <string name="acc_label">YWhatsapp Key</string>
+    <string name="acc_summary">Membaca kunci nama pengguna dan menekan tombol secara otomatis</string>
+    <string name="acc_desc">Layanan ini membaca teks kunci nama pengguna yang tampil di layar WhatsApp dan menekan tombol Dapatkan kunci yang berbeda serta Simpan kunci. Tidak ada data yang dikirim keluar dari perangkat.</string>
+
+    <string name="setup_title">Persiapan</string>
+    <string name="setup_sub">Tiga izin ini wajib sebelum panel bisa dipakai</string>
+    <string name="step_access">Aksesibilitas</string>
+    <string name="step_access_desc">Membaca kunci dan menekan tombol</string>
+    <string name="step_overlay">Layar mengambang</string>
+    <string name="step_overlay_desc">Menampilkan panel di atas WhatsApp</string>
+    <string name="step_battery">Baterai tanpa batas</string>
+    <string name="step_battery_desc">Mencegah panel dimatikan sistem</string>
+    <string name="state_on">AKTIF</string>
+    <string name="state_off">BELUM</string>
+    <string name="open_settings">Buka</string>
+
+    <string name="start_panel">Mulai panel</string>
+    <string name="start_panel_hint">Panel akan muncul sebagai gelembung kecil</string>
+    <string name="how_to_title">Cara pakai</string>
+    <string name="how_to_1">Buka WhatsApp, masuk ke halaman kunci nama pengguna</string>
+    <string name="how_to_2">Ketuk gelembung, isi target kunci bila perlu</string>
+    <string name="how_to_3">Tekan Mulai, biarkan panel bekerja</string>
+
+    <string name="dev_label">Dibuat oleh</string>
+    <string name="dev_name">Yuurisan</string>
+
+    <string name="panel_title">YWhatsapp Key</string>
+    <string name="panel_idle">SIAP</string>
+    <string name="panel_scan">MENCARI</string>
+    <string name="panel_found">DITEMUKAN</string>
+    <string name="panel_error">TERHENTI</string>
+    <string name="panel_key_none">————</string>
+    <string name="panel_new_key">Kunci baru</string>
+    <string name="panel_target">Target</string>
+    <string name="panel_target_hint">kosong = apa pun, banyak target dipisah spasi</string>
+    <string name="panel_target_multi">Target %1$d</string>
+    <string name="panel_twin">Kunci kembar</string>
+    <string name="panel_start">Mulai</string>
+    <string name="panel_stop">Stop</string>
+    <string name="panel_auto">Auto simpan</string>
+    <string name="panel_auto_on">Auto simpan aktif</string>
+    <string name="panel_auto_off">Auto simpan mati, berhenti di angka target</string>
+    <string name="log_stuck">Angka tidak berubah setelah %1$d tap, cek Set titik</string>
+    <string name="log_blind">Angka tidak terbaca, mesin berhenti</string>
+    <string name="log_hold">Kunci %1$s cocok, auto simpan mati</string>
+    <string name="panel_attempts">%1$d percobaan</string>
+    <string name="panel_speed">%1$d ms</string>
+    <string name="panel_log_title">Catatan</string>
+    <string name="panel_history">Riwayat</string>
+    <string name="panel_history_empty">Belum ada kunci tersimpan</string>
+
+    <string name="log_engine_start">Mesin dimulai</string>
+    <string name="log_engine_stop">Mesin dihentikan</string>
+    <string name="log_found">Kunci %1$s cocok</string>
+    <string name="log_saved">Kunci %1$s disimpan</string>
+    <string name="log_generate">Menekan kunci baru</string>
+    <string name="log_no_button">Tombol tidak ditemukan</string>
+    <string name="log_no_key">Kunci tidak terbaca</string>
+    <string name="log_no_service">Aksesibilitas belum aktif</string>
+    <string name="log_no_target">Target kosong, berhenti di kunci pertama</string>
+    <string name="log_start_multi">Mesin dimulai, %1$d target</string>
+
+    <string name="notif_channel">Panel mengambang</string>
+    <string name="notif_title">YWhatsapp Key aktif</string>
+    <string name="notif_text">Ketuk untuk membuka panel</string>
+    <string name="notif_panel">Panel</string>
+    <string name="notif_stop">Stop</string>
+
+    <string name="panel_pick">Set titik</string>
+    <string name="panel_min">Kecilkan</string>
+    <string name="pick_step1">Ketuk tombol kunci baru di WhatsApp</string>
+    <string name="pick_step2">Sekarang ketuk tombol simpan</string>
+    <string name="pick_done">Titik tombol disimpan</string>
+    <string name="pick_cancel">Kalibrasi dibatalkan</string>
+    <string name="panic_done">Mesin dan panel dihentikan</string>
+
+    <string name="err_overlay">Izin layar mengambang belum aktif</string>
+    <string name="err_access">Layanan aksesibilitas belum aktif</string>
+</resources>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="292dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_panel"
+    android:padding="12dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:elevation="12dp">
+
+    <LinearLayout
+        android:id="@+id/headerRow"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/stateDot"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/bg_dot" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="7dp"
+            android:text="@string/panel_title"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"
+            android:letterSpacing="0.10"
+            android:fontFamily="sans-serif-medium"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/phaseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/panel_idle"
+            android:textSize="9sp"
+            android:textColor="@color/mint"
+            android:letterSpacing="0.12"
+            android:fontFamily="sans-serif-medium" />
+
+        <ImageView
+            android:id="@+id/minBtn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_chevron"
+            android:tint="@color/text_dim"
+            android:contentDescription="@string/panel_min" />
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/text_dim"
+            android:contentDescription="@string/panel_stop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_green"
+            android:paddingTop="12dp"
+            android:paddingBottom="9dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/keyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_key_none"
+                android:textSize="32sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:letterSpacing="0.24"
+                android:includeFontPadding="false"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:id="@+id/newKeyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_refresh"
+                    android:tint="@color/mint"
+                    android:contentDescription="@string/panel_new_key" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/panel_new_key"
+                    android:textSize="11sp"
+                    android:textColor="@color/mint"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/targetLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_target"
+                style="@style/Label" />
+
+            <EditText
+                android:id="@+id/targetInput"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_field"
+                android:hint="@string/panel_target_hint"
+                android:textColorHint="@color/text_dim"
+                android:textColor="@color/text_primary"
+                android:textSize="12.5sp"
+                android:fontFamily="monospace"
+                android:inputType="number"
+                android:maxLength="79"
+                android:paddingStart="9dp"
+                android:paddingEnd="9dp"
+                android:singleLine="true"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/twinChip"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_chip"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                android:text="@string/panel_twin"
+                android:textSize="10.5sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/autoChip"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_chip"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                android:text="@string/panel_auto"
+                android:textSize="10.5sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/pickBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_chip"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                android:text="@string/panel_pick"
+                android:textSize="10.5sp"
+                android:textColor="@color/mint"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/startBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_primary"
+                android:gravity="center"
+                android:text="@string/panel_start"
+                android:textSize="12.5sp"
+                android:textColor="@color/canvas"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/stopBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_btn_ghost"
+                android:gravity="center"
+                android:text="@string/panel_stop"
+                android:textSize="12.5sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/metaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textSize="9sp"
+            android:textColor="@color/text_dim"
+            android:fontFamily="monospace"
+            android:gravity="end"
+            android:singleLine="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+
+            <TextView
+                android:id="@+id/logText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="9sp"
+                android:textColor="@color/text_dim"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="1dp"
+                android:gravity="top" />
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/outline" />
+
+        <LinearLayout
+            android:id="@+id/devRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dev_label"
+                android:textSize="9sp"
+                android:textColor="@color/text_dim"
+                android:letterSpacing="0.06" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/dev_name"
+                android:textSize="9sp"
+                android:textColor="@color/mint"
+                android:fontFamily="sans-serif-medium" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_external"
+                android:tint="@color/text_dim"
+                android:contentDescription="@string/dev_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

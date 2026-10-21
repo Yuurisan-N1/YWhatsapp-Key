@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YWhatsapp Key</string>
+
+    <string name="acc_label">YWhatsapp Key</string>
+    <string name="acc_summary">Reads the username key and taps buttons automatically</string>
+    <string name="acc_desc">This service reads the username key text shown on the WhatsApp screen and taps the Get a different key and Save key buttons. No data leaves the device.</string>
+
+    <string name="setup_title">Setup</string>
+    <string name="setup_sub">These three permissions are required before the panel works</string>
+    <string name="step_access">Accessibility</string>
+    <string name="step_access_desc">Reads the key and taps buttons</string>
+    <string name="step_overlay">Display over other apps</string>
+    <string name="step_overlay_desc">Shows the panel above WhatsApp</string>
+    <string name="step_battery">Unrestricted battery</string>
+    <string name="step_battery_desc">Keeps the panel from being killed</string>
+    <string name="state_on">ON</string>
+    <string name="state_off">OFF</string>
+    <string name="open_settings">Open</string>
+
+    <string name="start_panel">Start panel</string>
+    <string name="start_panel_hint">The panel appears as a small bubble</string>
+    <string name="how_to_title">How to use</string>
+    <string name="how_to_1">Open WhatsApp and go to the username key page</string>
+    <string name="how_to_2">Tap the bubble, enter a target key if needed</string>
+    <string name="how_to_3">Press Start and let the panel work</string>
+
+    <string name="dev_label">Built by</string>
+    <string name="dev_name">Yuurisan</string>
+
+    <string name="panel_title">YWhatsapp Key</string>
+    <string name="panel_idle">READY</string>
+    <string name="panel_scan">SCANNING</string>
+    <string name="panel_found">FOUND</string>
+    <string name="panel_error">STOPPED</string>
+    <string name="panel_key_none">————</string>
+    <string name="panel_new_key">New key</string>
+    <string name="panel_target">Target</string>
+    <string name="panel_target_hint">empty = any, separate targets with space</string>
+    <string name="panel_target_multi">Targets %1$d</string>
+    <string name="panel_twin">Twin keys</string>
+    <string name="panel_start">Start</string>
+    <string name="panel_stop">Stop</string>
+    <string name="panel_auto">Auto save</string>
+    <string name="panel_auto_on">Auto save on</string>
+    <string name="panel_auto_off">Auto save off, stops on target</string>
+    <string name="log_stuck">Number unchanged after %1$d taps, check Set point</string>
+    <string name="log_blind">Number unreadable, engine stopped</string>
+    <string name="log_hold">Key %1$s matched, auto save off</string>
+    <string name="panel_attempts">%1$d attempts</string>
+    <string name="panel_speed">%1$d ms</string>
+    <string name="panel_log_title">Log</string>
+    <string name="panel_history">History</string>
+    <string name="panel_history_empty">No saved keys yet</string>
+
+    <string name="log_engine_start">Engine started</string>
+    <string name="log_engine_stop">Engine stopped</string>
+    <string name="log_found">Key %1$s matched</string>
+    <string name="log_saved">Key %1$s saved</string>
+    <string name="log_generate">Tapping new key</string>
+    <string name="log_no_button">Button not found</string>
+    <string name="log_no_key">Key not readable</string>
+    <string name="log_no_service">Accessibility is not enabled</string>
+    <string name="log_no_target">No target, stops on first key</string>
+    <string name="log_start_multi">Engine started, %1$d targets</string>
+
+    <string name="notif_channel">Floating panel</string>
+    <string name="notif_title">YWhatsapp Key running</string>
+    <string name="notif_text">Tap to open the panel</string>
+    <string name="notif_panel">Panel</string>
+    <string name="notif_stop">Stop</string>
+
+    <string name="panel_pick">Set point</string>
+    <string name="panel_min">Collapse</string>
+    <string name="pick_step1">Tap the new key button in WhatsApp</string>
+    <string name="pick_step2">Now tap the save button</string>
+    <string name="pick_done">Button points saved</string>
+    <string name="pick_cancel">Calibration cancelled</string>
+    <string name="panic_done">Engine and panel stopped</string>
+
+    <string name="err_overlay">Display over other apps is not allowed</string>
+    <string name="err_access">Accessibility service is not enabled</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="canvas">#FF0B0B0C</color>
+    <color name="surface">#FF16171A</color>
+    <color name="surface_alt">#FF1F2024</color>
+    <color name="surface_high">#FF26282D</color>
+    <color name="card_green">#FF17402F</color>
+    <color name="card_green_edge">#FF215C43</color>
+    <color name="mint">#FF74C69D</color>
+    <color name="mint_bright">#FF52B788</color>
+    <color name="mint_dim">#FF3E8E68</color>
+    <color name="text_primary">#FFF2F3F5</color>
+    <color name="text_secondary">#FF9A9DA4</color>
+    <color name="text_dim">#FF6B6E75</color>
+    <color name="outline">#FF2A2C31</color>
+    <color name="btn_off">#FF26282D</color>
+    <color name="btn_off_text">#FF6B6E75</color>
+    <color name="warn">#FFD98324</color>
+</resources>
