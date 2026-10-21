@@ -1,0 +1,3 @@
+-keep class com.yuurisan.ywhatsappkey.input.TapService { *; }
+-keep class com.yuurisan.ywhatsappkey.overlay.FloatingService { *; }
+-keepclassmembers class * implements android.os.Parcelable { public static final ** CREATOR; }
